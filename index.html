@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>typewriter animation</title>
+
+</head>
+<style>
+  * {
+    background-color: #333;
+  }
+
+  .container {
+    text-align: center;
+    margin-top: 10%;
+
+  }
+
+  .name {
+    font-size: 4vw;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5%;
+  }
+
+  .job {
+    font-size: 5vw;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    background: linear-gradient(to right, #4CAF50, #ff4a1d);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+  }
+
+
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+
+    to {
+      width: 100%
+    }
+  }
+
+
+  .job {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(40, end) infinite;
+  }
+
+  @media (max-width: 768px) {
+    .name {
+      font-size: 6vw;
+    }
+
+    .job {
+      font-size: 6vw;
+    }
+  }
+</style>
+
+<body>
+  <span class="container">
+    <h1 class="name">I'm Muhammad Usman</h1>
+    <h2 class="job">Full Stack Developer</h2>
+  </span>
+
+</body>
+
+</html>
